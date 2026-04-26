@@ -1,5 +1,5 @@
 # PropPortal - Real Estate Management System
-## SE1020 Object Oriented Programming Project
+ Object Oriented Programming Project JAVA
 
 ### Prerequisites
 - Java 17+
