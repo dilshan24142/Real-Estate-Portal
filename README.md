@@ -1,54 +1,43 @@
-# PropPortal - Real Estate Management System
- Object Oriented Programming Project JAVA
+echo "# 🏠 PropPortal - Real Estate Management System
 
-### Prerequisites
-- Java 17+
-- Maven 3.8+
-- MySQL 8.0+
-- IntelliJ IDEA (recommended)
+## 🚀 Overview
+PropPortal is a Java Spring Boot application demonstrating Object-Oriented Programming concepts with a PostgreSQL database.
 
-### Setup Instructions
+## 🛠️ Tech Stack
+- Java 17
+- Spring Boot
+- PostgreSQL
+- Maven
+- Thymeleaf
 
-#### 1. Configure MySQL
-Open MySQL and run:
-```sql
-CREATE DATABASE real_estate_portal;
-```
+## ⚙️ Setup
 
-#### 2. Update Database Credentials
-Edit `src/main/resources/application.properties`:
-```properties
-spring.datasource.username=root
-spring.datasource.password=YOUR_MYSQL_PASSWORD
-```
+### 1. Create Database
+CREATE DATABASE cl;
 
-#### 3. Run the Application
-```bash
+### 2. Configure application.properties
+spring.datasource.url=jdbc:postgresql://localhost:5432/cl
+spring.datasource.username=postgres
+spring.datasource.password=YOUR_PASSWORD
+
+### 3. Run App
 mvn spring-boot:run
-```
-Or open in IntelliJ IDEA and run `RealEstatePortalApplication.java`
 
-#### 4. Access the App
-Open browser: http://localhost:8080
+## 🌐 Access
+http://localhost:8087
 
-### Default Admin Login
-- Email: `admin@realestate.com`
-- Password: `admin123`
+## 🔐 Default Login
+admin@realestate.com / admin123
 
-### OOP Concepts Implemented
+## 🧠 OOP Concepts
+- Encapsulation
+- Inheritance
+- Polymorphism
+- Abstraction
 
-| Concept | Where Applied |
-|---------|---------------|
-| **Encapsulation** | All model classes use private fields with getters/setters |
-| **Inheritance** | SystemUser → Buyer, Renter, Admin / Property → Residential, Commercial / Lister → Agent, IndependentSeller / Feedback → PropertyQuestion, AgentReview |
-| **Polymorphism** | getUserType(), getProfileSummary(), getDashboardRedirect(), calculateTax(), getDisplayDetails(), getFeedbackType() |
-| **Abstraction** | Abstract base classes with abstract methods |
+## 📁 Structure
+model / repository / service / controller
 
-### Project Structure
-```
-src/main/java/com/realestate/
-├── model/          # 10 OOP model classes (3 inheritance hierarchies)
-├── repository/     # 12 Spring Data JPA repositories
-├── service/        # 5 service classes
-└── controller/     # 6 controllers (one per component)
-```
+---
+👨‍💻 Sachintha Dilshan
+" > README.md
